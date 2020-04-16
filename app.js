@@ -2,7 +2,6 @@ var express = require('express');
 var cors = require('cors');
 var app = express();
 app.use(cors());
-const sharp = require('sharp');
 var bodyParser = require('body-parser')
 var mysql      = require('mysql'); 
 var connection = mysql.createConnection({
@@ -13,18 +12,12 @@ var connection = mysql.createConnection({
   database : 'storyLine'
 });
 connection.connect();
-var iframeReplacement = require('node-iframe-replacement');
-app.use(iframeReplacement);
+
 
 var path = require('path');
 var multer = require('multer');
 const multerS3 = require('multer-s3');
 const AWS = require('aws-sdk');
-//const sharp = require('sharp');
-//const s3Storage = require('multer-sharp-s3');
-
-var http = require('http');
-var fs = require('fs');
 
 
 AWS.config.loadFromPath(__dirname + "/../config/awsconfig.json");
