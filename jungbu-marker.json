@@ -1,0 +1,10 @@
+{
+	"uri":"jungbu-marker.json",
+	"name":"Letsee Web AR SDK",
+	"size":{
+		"width": 940,
+		"height": 640
+	},
+	"scale": 1,
+	"image":"jungbu.png"
+}
