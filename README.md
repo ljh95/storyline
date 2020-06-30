@@ -1,6 +1,8 @@
 # 프로젝트 소개   
 * StoryLine 소개   
 * 기술소개   
+* 소개 영상 링크 
+[StoryLine](https://drive.google.com/file/d/1-HcdsgJn_ep6v_gKMsxLIdRnlKCgqBAz/view?usp=sharing, "소개 link")
    
 # StoryLine 소개   
 <img src="/readmeImageFile/intro3.png">    
