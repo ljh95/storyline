@@ -1,0 +1,137 @@
+/* noto-sans-kr-regular - latin_korean */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/noto-sans-kr-v12-latin_korean-regular.eot'); /* IE9 Compat Modes */
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
+       url('../fonts/noto-sans-kr-v12-latin_korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/noto-sans-kr-v12-latin_korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/noto-sans-kr-v12-latin_korean-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/noto-sans-kr-v12-latin_korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/noto-sans-kr-v12-latin_korean-regular.svg#NotoSansKR') format('svg'); /* Legacy iOS */
+}
+
+body{
+  margin: 0px;
+  height: 100vh;
+  width: 100%;
+}
+div{
+  -webkit-overflow-scrolling: touch;
+}
+
+.warning,.notice{
+  display: block;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 95%;
+  padding: 10px 0px;
+  margin: 10px 2.5%;
+  box-shadow: 0px 0px 3px #999;
+}
+.warning > p, .notice > p{
+  font-size: 12px;
+  margin: 5px;
+}
+
+.notice{
+  background-color: #969696;
+}
+.warning{
+  background-color: #FE4365;
+}
+
+
+#background_Layer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -5;
+}
+#content_Layer{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: auto;
+}
+#black_Layer{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -200%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity ease-in 0.3s;
+}
+#side_Layer{
+  background-color: #fff;
+  height: 100vh;
+  width: 80%;
+  left: -100%;
+  position: absolute;
+  z-index: 5;
+  box-shadow: 0px 5px 10px #555;
+  transition: left ease-in 0.3s;
+}
+#modal_Layer{
+  height: 100vh;
+  width: 100%;
+  top: -100%;
+  position: absolute;
+  z-index: 10;
+}
+
+/* 스크롤바 */
+::-webkit-scrollbar {width: 0px; height: 0px;  }
+::-webkit-scrollbar-track {  background: rgba(0,0,0,0); }
+::-webkit-scrollbar-thumb {  border-radius: 20px; background-color: #00000070;}
+
+
+/* 사이드바 */
+#profileBox{
+  height: 30%;
+  background-image: url("../img/profile.png");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#userProfile{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #000;
+}
+#username{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px #000;
+}
+#menuBox{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  line-height: 60px;
+  color: #3B3838;
+  font-size: 24px;
+  padding: 0 20px;
+
+}
+#setmenu {
+  border-top: solid 1px #555;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 전역 CSS -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- 지역 CSS -->
+  <link rel="stylesheet" href="css/StoryWriter.css">
+  <!-- test CSS -->
+  <link rel="stylesheet" href="css/test.css">
+
+</head>
+
+<body>
+  <div id="background_Layer">
+
+  </div>
+  <div id="content_Layer">
+    <div id="StoryLineTitleZone">
+      <img src="img/StorylineDefault.jpg" alt="">
+      <div id="StoryLineTitle">
+
+      </div>
+    </div>
+    <div id="StoryProfile">
+      <div id="ProfilePosition">
+        <input id="StoryTitle" type="text" name="" value="" placeholder="스토리의 제목을 써주세요">
+        <input id="mapSelector" type="button" name="" value="📌 위치">
+      </div>
+      <textarea id="Summary_Place" placeholder="해당 스토리를 간략히 줄여서 써주세요" name="" rows="3" cols="80"></textarea>
+    </div>
+    <div id="Storylist">
+      <div id="Storylistzone">
+      </div>
+      <div id="StoryADDzone">
+        스토리를 추가합니다
+        <div id="ADDinfo">
+          <input id="ADDText" class="ADDbnt" type="button" name="" value="텍스트" onclick="createContent(this.value)">
+          <input id="ADDIMG" class="ADDbnt" type="button" name="" value="이미지" onclick="createContent(this.value)">
+          <input id="ADDIMG" class="ADDbnt" type="button" name="" value="비디오" onclick="createContent(this.value)">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- <script src="main.js"></script> -->
+  <script src="js/StoryWriter.js"></script>
+  <script src="https://apis.openapi.sk.com/tmap/js?version=1&format=javascript&appKey=894c5ae4-5aac-41c6-97fa-6c912ad9d00b"></script>
+  <script src="js/mapfinder.js"></script>
+  <div id="black_Layer">
+  </div>
+  <div id="modal_Layer">
+    <div id="modal_Background">
+
+    </div>
+    <div id="modal_map" class="modal">
+      <div id="map_view">
+        <div id="map_div">
+        </div>
+        <div id="mapbnt" class="modal_flex">
+          <input id="mapSubmit" class="modal_but" type="button" name="" value="완료" onClick=";">
+        </div>
+      </div>
+      <div id="map_overview">
+        <div id="map_search">
+          <input type="text" id="place" placeholder="장소를 검색하세요">
+          <input type="submit" id="search_bnt" value="검색" onclick="searchFun()">
+        </div>
+      </div>
+      <div id="searchResult" name="searchResult"></div>
+    </div>
+    <div id="modal_storytext" class="modal">
+      <textarea id="text_change" placeholder="여기에 텍스트를 적으세요" name="name" rows="8" cols="80"></textarea>
+      <div id="text_change_bnts">
+        <input id="textdelSubmit" class="modal_but" type="button" name="" value="삭제" onClick="content_delete();">
+        <input id="textchangeSubmit" class="modal_but" type="button" name="" value="적용" onClick="changeText(changetext_id,modal_textchange.val());">
+      </div>
+    </div>
+    <div id="modal_storyimg" class="modal" >
+      <div id="img_changetext">
+        <u>이미지 변경</u>
+      </div>
+      <img id ="img_change" src="img/imgtypeDefault.jpg" alt="">
+      <div id="img_change_bnts">
+        <input id="imgdelSubmit" class="modal_but" type="button" name="" value="삭제" onClick="content_delete();">
+        <input id="imgchangeSubmit" class="modal_but" type="button" name="" value="적용" onClick="changeImg(changeimg_id);">
+      </div>
+    </div>
+    <form id="img_form"  method="post" enctype="multipart/form-data">
+      <input type="file" id="imgtype_uplode" name="imgFile">
+    </form>
+  </div>
+</body>
+
+</html>

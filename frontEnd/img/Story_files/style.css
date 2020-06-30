@@ -1,0 +1,631 @@
+div.tmMap {
+	background: url("img/tlogo.png");
+    z-index: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: default;
+}
+
+div.tmMapViewport {
+    text-align: left;
+}
+
+div.tmLayerDiv {
+   -moz-user-select: none;
+   -kholl-user-select: none;
+}
+
+.tmLayerGoogleCopyright {
+    left: 2px;
+    bottom: 2px;
+}
+.tmLayerGoogleV3.tmLayerGoogleCopyright {
+    right: auto !important;
+}
+.tmLayerGooglePoweredBy {
+    left: 2px;
+    bottom: 15px;
+}
+.tmLayerGoogleV3.tmLayerGooglePoweredBy {
+    bottom: 15px !important;
+}
+.tmControlAttribution {
+    font-size: smaller;
+    right: 10px;
+    bottom: 2px;
+    position: absolute;
+    display: block;
+}
+.tmControlScale {
+    right: 3px;
+    bottom: 3em;
+    display: block;
+    position: absolute;
+    font-size: smaller;
+}
+.tmControlScaleLine {
+   display: block;
+   position: absolute;
+   left: 10px;
+   bottom: 15px;
+   font-size: xx-small;
+}
+.tmControlScaleLineBottom {
+   border: solid 2px black;
+   border-bottom: none;
+   margin-top:-2px;
+   text-align: center;
+}
+.tmControlScaleLineTop {
+   border: solid 2px black;
+   border-top: none;
+   text-align: center;
+}
+
+.tmControlPermalink {
+    right: 3px;
+    bottom: 1.5em;
+    display: block;
+    position: absolute;
+    font-size: smaller;
+}
+
+div.tmControlMousePosition {
+    bottom: 0;
+    right: 3px;
+    display: block;
+    position: absolute;
+    font-family: Arial;
+    font-size: smaller;
+}
+
+.tmControlOverviewMapContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.tmControlOverviewMapElement {
+    padding: 10px 18px 10px 10px;
+    background-color: #00008B;
+    -moz-border-radius: 1em 0 0 0;
+}
+
+.tmControlOverviewMapMinimizeButton,
+.tmControlOverviewMapMaximizeButton {
+    height: 18px;
+    width: 18px;
+    right: 0;
+    bottom: 80px;
+    cursor: pointer;
+}
+
+.tmControlOverviewMapExtentRectangle {
+    overflow: hidden;
+    background-image: url("img/blank.gif");
+    cursor: move;
+    border: 2px dotted red;
+}
+.tmControlOverviewMapRectReplacement {
+    overflow: hidden;
+    cursor: move;
+    background-image: url("img/overview_replacement.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tmLayerGeoRSSDescription {
+    float:left;
+    width:100%;
+    overflow:auto;
+    font-size:1.0em;
+}
+.tmLayerGeoRSSClose {
+    float:right;
+    color:gray;
+    font-size:1.2em;
+    margin-right:6px;
+    font-family:sans-serif;
+}
+.tmLayerGeoRSSTitle {
+    float:left;font-size:1.2em;
+}
+
+.tmPopupContent {
+    padding:5px;
+    overflow: auto;
+	white-space:nowrap;
+    /*
+    border:1px solid black;
+    */
+}
+
+.tmControlNavigationHistory {
+   background-image: url("img/navigation_history.png");
+   background-repeat: no-repeat;
+   width:  24px;
+   height: 24px;
+
+}
+.tmControlNavigationHistoryPreviousItemActive {
+  background-position: 0 0;
+}
+.tmControlNavigationHistoryPreviousItemInactive {
+   background-position: 0 -24px;
+}
+.tmControlNavigationHistoryNextItemActive {
+   background-position: -24px 0;
+}
+.tmControlNavigationHistoryNextItemInactive {
+   background-position: -24px -24px;
+}
+
+div.tmControlSaveFeaturesItemActive {
+    background-image: url(img/save_features_on.png);
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+}
+div.tmControlSaveFeaturesItemInactive {
+    background-image: url(img/save_features_off.png);
+    background-repeat: no-repeat;
+    background-position: 0 1px;
+}
+
+.tmHandlerBoxZoomBox {
+    border: 2px solid red;
+    position: absolute;
+    background-color: white;
+    opacity: 0.50;
+    font-size: 1px;
+    filter: alpha(opacity=50);
+}
+.tmHandlerBoxSelectFeature {
+    border: 2px solid blue;
+    position: absolute;
+    background-color: white;
+    opacity: 0.50;
+    font-size: 1px;
+    filter: alpha(opacity=50);
+}
+
+.tmControlPanPanel {
+    top: 10px;
+    left: 5px;
+}
+
+.tmControlPanPanel div {
+    background-image: url(img/pan-panel.png);
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.tmControlPanPanel .tmControlPanNorthItemInactive {
+    top: 0;
+    left: 9px;
+    background-position: 0 0;
+}
+.tmControlPanPanel .tmControlPanSouthItemInactive {
+    top: 36px;
+    left: 9px;
+    background-position: 18px 0;
+}
+.tmControlPanPanel .tmControlPanWestItemInactive {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    background-position: 0 18px;
+}
+.tmControlPanPanel .tmControlPanEastItemInactive {
+    top: 18px;
+    left: 18px;
+    background-position: 18px 18px;
+}
+
+.tmControlZoomPanel {
+    top: 71px;
+    left: 14px;
+}
+
+.tmControlZoomPanel div {
+    background-image: url(img/zoom-panel.png);
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.tmControlZoomPanel .tmControlZoomInItemInactive {
+    top: 0;
+    left: 0;
+    background-position: 0 0;
+}
+
+.tmControlZoomPanel .tmControlZoomToMaxExtentItemInactive {
+    top: 18px;
+    left: 0;
+    background-position: 0 -18px;
+}
+
+.tmControlZoomPanel .tmControlZoomOutItemInactive {
+    top: 36px;
+    left: 0;
+    background-position: 0 18px;
+}
+
+/*
+ * When a potential text is bigger than the image it move the image
+ * with some headers (closes #3154)
+ */
+.tmControlPanZoomBar div {
+    font-size: 1px;
+}
+
+.tmPopupCloseBox {
+  /*background: url("img/close.gif") no-repeat;*/
+  background: url("img/bt_close2.png") no-repeat;
+  cursor: pointer;
+}
+
+.tmFramedCloudPopupContent {
+    padding: 5px;
+    overflow: auto;
+}
+
+.tmControlNoSelect {
+ -moz-user-select: none;
+ -kholl-user-select: none;
+}
+
+.tmImageLoadError {
+	background: url("img/nullImage.png")
+}
+
+/**
+ * Cursor styles
+ */
+
+.tmCursorWait {
+    cursor: wait;
+}
+.tmDragDown {
+    cursor: move;
+}
+.tmDrawBox {
+    cursor: crosshair;
+}
+.tmControlDragFeatureOver {
+    cursor: move;
+}
+.tmControlDragFeatureActive.tmControlDragFeatureOver.tmDragDown {
+    cursor: -moz-grabbing;
+}
+
+/**
+ * Layer switcher
+ */
+.tmControlLayerSwitcher {
+    
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 20em;		
+    
+    div.tmControlZoom {
+		    
+		    position: absolute;
+		    top: 6px;
+		    left: 6px;
+		    background: rgba(255,255,255,0.4);
+		    border-radius: 3px;
+		    padding: 2px;
+		    
+		}
+		div.tmControlZoom a {
+		 
+		    display: block;
+		    margin: 8px;
+		    padding: 0;
+		    color: white;
+		    font-size: 30px;
+		    font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+		    font-weight: bold;
+		    text-decoration: none;
+		    text-align: center;
+		    height: 30px;
+		    width:30px;
+		    line-height: 28px;
+		    
+		    background: #646464; 
+		    background: rgba(100, 100, 100, 0.4);
+		     
+		    filter: alpha(opacity=40);
+		}
+		div.tmControlZoom a:hover {
+		    background: #646464; 
+		    background: rgba(100, 100, 100, 0.6);
+		    filter: alpha(opacity=60);
+		}
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    font-size: smaller;
+    color: white;
+    background-color: transparent;
+}
+
+.tmControlLayerSwitcher .layersDiv {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    background-color: #61a0ff;
+}
+
+.tmControlLayerSwitcher .layersDiv .baseLbl,
+.tmControlLayerSwitcher .layersDiv .dataLbl {
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+}
+
+.tmControlLayerSwitcher .layersDiv .baseLayersDiv,
+.tmControlLayerSwitcher .layersDiv .dataLayersDiv {
+    padding-left: 10px;
+}
+
+.tmControlLayerSwitcher .maximizeDiv,
+.tmControlLayerSwitcher .minimizeDiv {
+    width: 18px;
+    height: 18px;
+    top: 5px;
+    right: 0;
+    cursor: pointer;
+}
+
+.tmBingAttribution {
+    color: #DDD;
+}
+.tmBingAttribution.road {
+    color: #333;
+}
+
+.tmGoogleAttribution.hybrid, .tmGoogleAttribution.satellite {
+    color: #EEE;
+}
+.tmGoogleAttribution {
+    color: #333;
+}
+span.tmGoogleAttribution a {
+    color: #77C;
+}
+span.tmGoogleAttribution.hybrid a, span.tmGoogleAttribution.satellite a {
+    color: #EEE;
+}
+
+/**
+ * Editing and navigation icons.
+ * (using the editing_tool_bar.png sprint image)
+ */
+.tmControlNavToolbar ,
+.tmControlEditingToolbar {
+    margin: 5px 5px 0 0;
+}
+.tmControlNavToolbar div,
+.tmControlEditingToolbar div {
+    background-image: url("img/editing_tool_bar.png");
+    background-repeat: no-repeat;
+    margin: 0 0 5px 5px;
+    width: 24px;
+    height: 22px;
+    cursor: pointer
+}
+/* positions */
+.tmControlEditingToolbar {
+    right: 0;
+    top: 0;
+}
+.tmControlNavToolbar {
+    top: 295px;
+    left: 9px;
+}
+/* layouts */
+.tmControlEditingToolbar div {
+    float: right;
+}
+/* individual controls */
+.tmControlNavToolbar .tmControlNavigationItemInactive,
+.tmControlEditingToolbar .tmControlNavigationItemInactive {
+    background-position: -103px -1px;
+}
+.tmControlNavToolbar .tmControlNavigationItemActive ,
+.tmControlEditingToolbar .tmControlNavigationItemActive  {
+    background-position: -103px -24px;
+}
+.tmControlNavToolbar .tmControlZoomBoxItemInactive {
+    background-position: -128px -1px;
+}
+.tmControlNavToolbar .tmControlZoomBoxItemActive  {
+    background-position: -128px -24px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePointItemInactive {
+    background-position: -77px -1px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePointItemActive {
+    background-position: -77px -24px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePathItemInactive {
+    background-position: -51px -1px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePathItemActive {
+    background-position: -51px -24px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePolygonItemInactive{
+    background-position: -26px -1px;
+}
+.tmControlEditingToolbar .tmControlDrawFeaturePolygonItemActive {
+    background-position: -26px -24px;
+}
+
+div.tmControlZoom {
+    
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 3px;
+    padding: 2px;
+    
+}
+div.tmControlZoom a {
+ 
+    display: block;
+    margin: 8px;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    width:30px;
+    line-height: 28px;
+    
+    background: #646464; 
+    background: rgba(100, 100, 100, 0.6);
+     
+    filter: alpha(opacity=60);
+}
+div.tmControlZoom a:hover {
+    background: #646464; 
+    background: rgba(100, 100, 100, 0.8);
+    filter: alpha(opacity=80);
+}
+@media only screen and (max-width: 600px) {
+    div.tmControlZoom a:hover {
+        background: rgba(0, 60, 136, 0.5);
+    }
+}
+a.tmControlZoomIn {
+    border-radius: 4px 4px 0 0;
+    
+}
+a.tmControlZoomOut {
+    border-radius: 0 0 4px 4px;
+}
+.tmLayerGrid .tmTileImage {
+	 max-width:none;
+	 /*
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+    */
+}
+/* Turn on GPU support where available */
+.tmTileImage {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+}
+
+#index_r        {position:relative; width:172px; height:30px; padding:0 3px 0 0; background:url("img/back_reduced.gif") repeat-x left top;position:absolute;z-index:2000;}
+#index_r  .chec {float:left; padding-top:4px; padding-bottom:4px; padding-right:3px;}
+#index_r  .red  {float:right; padding-top:4px; padding-bottom:4px; padding-right:3px;}
+#index_r  .col  {float:right; padding-top:4px; padding-bottom:4px;}
+
+#index_e        {position:relative; width:497px; height:191px; padding:0 3px 0 0; border:1px solid #000; background:url("img/back_expand.gif") repeat-x left top;position:absolute;z-index:2000;}
+#index_e  .chec {float:left; padding-top:8px; padding-bottom:4px;margin-left:115px}
+#index_e  .col  {float:right; padding-top:4px; padding-bottom:4px;}
+#index_e  .exp  {float:right; padding-top:4px; padding-bottom:4px; padding-right:3px;}
+
+
+
+/*CSS 초기화 */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
+q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+}
+
+/* 거리표시 팝업*/
+.tmDistancePop{
+	border: 1px;
+	background-color: #FFF;
+	font-size: 12px;
+	border-color: #FF0000;
+	border-style: solid;
+	text-align: center;
+}
+/*공통사용 클래스*/
+.tmDistancePopStyle {
+	border: 1px;
+	background-color: #FFF;
+	font-size: 12px;
+	border-color: #FF0000;
+	border-style: solid;
+	text-align:left;
+}
+/*시작점 스타일 클래스*/
+.tmDistancePopStart{
+	background-color: #FF5959;
+	font-weight:bold;
+	color:#FFF;
+	text-align: center;
+}
+/*마지막 포인트 거리/면적 정보팝업 */
+.tmDistancePopLast{
+	text-align: left;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.tmDistancePopLastBlue{
+	border-color: #0000FF;
+	text-align: left;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.tmDistancePopLastBlue span {
+	display:inline-block;
+	width:70px
+}
+.tmDistancePopLast span {
+	display:inline-block;
+	width:70px
+}
+.tmDistancePopDesc{
+	white-space:normal;
+	font-size: 11px;
+	color : #c1c1c1;
+}
+.tmDistancePopDesc hr{
+    border: 0;
+    height: 1px;
+  	background: #a1a1a1;
+}
+.tmDistanceCloseBox {
+	width:16px;
+	height:16px;
+	padding:1px;
+	border:1px solid #c1c1c1;
+	background: url('https://openmap2.tmap.co.kr/tmaplib/theme/default/img/bt_close.png')	
+}

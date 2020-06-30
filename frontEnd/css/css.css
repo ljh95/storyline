@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Nanum+Myeongjo|Noto+Serif+KR|Yeon+Sung&display=swap');
+#content1{
+  width: 640px;
+  height: 316px;
+  background-image: url("content1.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  font-family: 'Noto Serif KR', serif;
+}
+#c1text1{
+  color: #000;
+  font-size: 30px;
+  margin-left: 350px;
+  padding-top: 50px;
+}
+
+#content2{
+  width: 550px;
+  height: 348px;
+  background-image: url("godo.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  font-family: 'Yeon Sung', cursive;
+}
+#c1text2{
+  color: #fff;
+  text-shadow: 3px 3px 5px #000;
+  font-size: 30px;
+  margin : auto;
+  padding-top: 300px;
+}
+
+body{
+  background-color: #000;
+}

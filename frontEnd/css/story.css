@@ -1,0 +1,495 @@
+#background_Layer {
+  background-color: #cdcdcd;
+}
+
+#content_Layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#StoryLineProfile {
+  width: 100%;
+  height: 45vh;
+  background-color: #fff;
+  transition: height ease 1s;
+  will-change: transform;
+  /* Enable hardware acceleration to fix laggy transitions */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#profile_img {
+  width: 100%;
+  height: 30vh;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  display: flex;
+  transition: height ease 1s;
+  will-change: transform;
+  box-shadow: 0px 2px 5px #333;
+  /* Enable hardware acceleration to fix laggy transitions */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#profile_img>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+#StoryLineimgPosition {
+  position: absolute;
+  width: 95%;
+  padding: 0 2.5%;
+  height: 30vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  transition: height ease 1s;
+  will-change: transform;
+  /* Enable hardware acceleration to fix laggy transitions */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#TimePosition {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#StoryLineTime {
+  display: inline-block;
+  height: 20px;
+  margin: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #333;
+}
+
+#StoryLineText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+
+#StoryLineWriter {
+  margin: 5px 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFC000;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#StoryLineTitle {
+  margin: 5px 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+  word-break: keep-all;
+}
+
+#StoryLineinfo {
+  width: 95%;
+  height: 15vh;
+  padding: 0 2.5%;
+  overflow-y: hidden;
+  transition: height 1s;
+  will-change: transform;
+  /* Enable hardware acceleration to fix laggy transitions */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#StoryLineinfo_notice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+#StoryLineTagPlace {
+  width: 75%;
+}
+
+#StoryLineTagzone {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#Tagdumizone {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+#Tagdumileft {
+  width: 20px;
+  height: 32px;
+  background: linear-gradient(to left, #ffffff00, #ffffffaa, #ffffffff);
+}
+
+#Tagdumiright {
+  width: 20px;
+  height: 32px;
+  background: linear-gradient(to right, #ffffff00, #ffffffaa, #ffffffff);
+}
+
+#StoryLineTagzone::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+#StoryLineTagzone::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+#StoryLineTagzone::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #00000070;
+}
+
+.storyLineTag {
+  height: 20px;
+  background-color: #767171;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFF;
+  box-shadow: 1px 1px 3px #333;
+  padding: 2px 10px;
+  margin: 5px 5px 5px 0px;
+  border-radius: 15px;
+}
+
+#Summary_Place {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  font-size: 13px;
+  margin: 5px 0px 5px 0px;
+  overflow: hidden;
+}
+
+#like_bnt {
+  width: 50px;
+  height: 20px;
+  box-shadow: 1px 1px 3px #333;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 2px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#like_bnt>img {
+  /* filter : brightness(0%); */
+  padding: 2.5px 2.5px;
+  align-items: center;
+}
+
+/* ------------------------하단부------------------------ */
+#Story_Place {
+  width: 100%;
+  height: 55vh;
+  transition: all ease 1s;
+}
+
+/* --------------지도-------------- */
+#storymap {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin-top: 15vh;
+  height: 85vh;
+}
+
+/* --------------리스트-------------- */
+#Storylist {
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  transition: height ease 1s;
+  will-change: transform;
+}
+
+#StoryContentBackground {
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  margin: 0px;
+  background-color: #F2F2F2;
+  transition: opacity ease 1s, height ease 1s;
+  opacity: 1.0;
+  will-change: opacity;
+}
+
+#StoryContent {
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  margin: 0px;
+  overflow-y: auto;
+  transition: height ease 1s;
+  will-change: transform;
+  /* Enable hardware acceleration to fix laggy transitions */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* --------------스토리-------------- */
+.stroycard {
+  width: 95%;
+  height: 180px;
+  margin: 10px 2.5%;
+  background-color: #999;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px #777;
+  overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFF;
+}
+
+.stroycard>img {
+  position: absolute;
+  width: 95%;
+  border: 0px;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(70%);
+  border-radius: 15px;
+}
+
+.story_info {
+  position: absolute;
+  width: 95%;
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story_upper {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.story_position {
+  color: #FFC000;
+}
+
+.story_title {
+  font-size: 26px;
+}
+
+.story_mapBnt {
+  background-color: #173648;
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0px 0px 5px #333;
+}
+
+.story_summary {
+  margin: 10px;
+  overflow-y: hidden;
+  max-height: 60px;
+}
+
+#scrolldumi {
+  width: 100%;
+  height: : 0px;
+}
+
+#mapMenu {
+  position: absolute;
+  z-index: 750;
+  width: 100%;
+}
+
+#walkinginfo {
+  width: 30%;
+  position: absolute;
+  background-color: #675094;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #999;
+  margin: 10px 35%;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+  height: 20px;
+}
+
+#walkingTime {
+  width: 50%;
+  text-align: center;
+}
+
+#walkingDistance {
+  width: 50%;
+  text-align: center;
+}
+
+#myposition {
+  background-color: #FE4365;
+  border: 0px;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px #999;
+  float: right;
+  margin: 10px;
+  height: 20px;
+}
+
+/* ------------------------하단부------------------------ */
+#story_Layer {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  left: -100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#storybackground {
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+}
+
+#Storyboard {
+  align-items: center;
+  background-color: #FFF;
+  position: absolute;
+  border-radius: 20px;
+  width: 90%;
+  margin: 5vh 5%;
+  max-height: 90vh;
+  top: 0%;
+  box-shadow: 0px 0px 10px #333;
+  overflow-y: scroll;
+}
+
+.Story {
+
+}
+#StoryTitle{
+  width: 90%;
+  margin: 0 10%;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.Story_arType {
+  width: 100%;
+  height: 200px;
+  background-color: #555;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.artext{
+  height: 40px;
+  padding: 5px;
+}
+.arimg{
+  margin: 5px 5px;
+  background: #fff;
+  height: 50px;
+  border-radius: 10px;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 40px;
+  display:flex;
+}
+.arimg img{
+  background: #ffffff;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.Story_imgType {
+  width: 100%;
+  height: 200px;
+  background-color: #555;
+  overflow: hidden;
+}
+
+.Story_imgType>img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.Story_textType {
+  width: 90%;
+  padding: 10px 2.5%;
+  margin: 10px 2.5%;
+  background-color: #444;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'NanumSquare','Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}

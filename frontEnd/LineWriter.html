@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 전역 CSS -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- 지역 CSS -->
+  <link rel="stylesheet" href="css/LineWriter.css">
+  <!-- test CSS -->
+  <link rel="stylesheet" href="css/test.css">
+
+</head>
+
+<body>
+  <div id="background_Layer">
+  </div>
+  <div id="content_Layer">
+    <div id="StoryLineProfile">
+      <div id="profile_img">
+        <!-- <img src="img/test1.jpg"> -->
+        <div id="profilePosition">
+          <div id="profileTop">
+            <div id="StoryLineTime" class="storyLineTimeNone">
+              소요시간을<br>설정해주세요
+            </div>
+          </div>
+          <div id="profileBottom">
+            <div id="profileLeft">
+              <div id="StoryLineWriter">
+                wjddlsrnr307 집필
+              </div>
+              <input id="StoryLineTitle" type="text" name="" value="" placeholder="이름을 입력하세요">
+            </div>
+            <div id="profileRight">
+              <div id="profileImgChange">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SubProfile">
+        <div id="Tag_Place">
+          <input class="Tags" type="text" name="" value="">
+          <span id="Tag_Add"> 태그추가</span>
+        </div>
+        <textarea id="Summary_Place" placeholder="스토리라인에 대한 간략한 설명을 추가하세요" name="" rows="3" cols="80"></textarea>
+      </div>
+    </div>
+
+    <div id="Story_Place">
+      <div id="StoryContentBackground">
+
+      </div>
+
+      <div id="StoryContent">
+
+        <div id="Storylist">
+
+        </div>
+        <div id="StoryAdd">
+          <div>
+            여기를 눌러서 <br>스토리를 추가하세요
+          </div>
+        </div>
+
+
+
+      </div>
+      <script src="js/jquery-3.4.1.min.js"></script>
+
+      <!-- <script src="main.js"></script> -->
+      <script src="js/LineWriter.js"></script>
+      <div id="black_Layer">
+
+      </div>
+
+      <div id="modal_Layer">
+        <div id="modal_Background">
+
+        </div>
+        <div id="timeSet" class="modal">
+          <div id="timeSetTitle" class="modalTitle">
+            소요시간을 설정해주세요
+          </div>
+          <div id="timeSetPosition">
+            <div id="timeSetInputPosition">
+              <input id=timeSetInput type="text" name="myInput" maxlength="2" placeholder="30" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+              <span id="timeSetKind">분</span>
+            </div>
+            <div id="timeSetBntList">
+              <input id="timeSetBntmin" type="button" name="" value="분" onClick="timeSetBnt(this.value);">
+              <input id="timeSetBnthour" type="button" name="" value="시간" onClick="timeSetBnt(this.value);">
+              <input id="timeSetBntday" type="button" name="" value="일" onClick="timeSetBnt(this.value);">
+            </div>
+            <input id="timeSetSubmit" type="button" name="" value="완료" onClick="timeSetSubmit();">
+          </div>
+        </div>
+
+        <div id="imguplode" class="modal">
+          <div id="imguplodeTitle" class="modalTitle">
+            프로필 이미지 변경
+          </div>
+          <div id="imgchose">
+            <div id="img_changetext">
+              <div id="img_changebnt" class="">
+                터치해서 이미지를 변경하세요
+              </div>
+            </div>
+            <img id ="img_change" src="img/img.svg" alt="">
+            <!-- <input id="imggallery" type="button" name="" value="업로드" onClick=";"> -->
+          </div>
+          <div id="imgbntposition">
+              <input id="imgSubmit" type="button" name="" value="완료" onClick="changeImg();">
+          </div>
+
+        </div>
+
+        <div id="pageout" class="modal">
+          <div id="imguplodeTitle" class="modalTitle">
+            수정을 종료하고 <br> 나가시겠습니까?
+          </div>
+          <div id="imgchose"  class="modal_position">
+            <input id="pageback" class="modal_but" type="button" name="" value="네" onClick="pageout(this.value);">
+            <input id="pagekeep" class="modal_but" type="button" name="" value="아니요" onClick="pageout(this.value);">
+          </div>
+        </div>
+
+        <div id="storydel" class="modal">
+          <div id="storydelTitle" class="modalTitle">
+            스토리 삭제
+          </div>
+          <div id="storydeltext">
+            스토리를 삭제하면 다시 되돌릴수 없습니다.<br>
+            정말 삭제하시겠습니까?
+          </div>
+          <div id="storydelchose" class="modal_position">
+            <input id="storydelyes" class="modal_but"  type="button" name="" value="네" onClick="storydel();">
+            <input id="storydelno" class="modal_but" type="button" name="" value="아니요" onClick="storydelOut()">
+          </div>
+        </div>
+
+
+        <form id="img_form"  method="post" enctype="multipart/form-data">
+          <input type="file" id="imgtype_uplode" name="imgFile">
+        </form>
+      </div>
+    </div>
+
+</body>
+
+</html>

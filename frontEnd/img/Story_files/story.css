@@ -1,0 +1,301 @@
+#background_Layer{
+  background-color: #cdcdcd;
+
+}
+#content_Layer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#StoryLineProfile {
+  width: 100%;
+  height: 45vh;
+  background-color: #fff;
+  transition: height ease 1s;
+}
+#profile_img {
+  width: 100%;
+  height: 30vh;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  display: flex;
+  transition: height ease 1s;
+}
+#profile_img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+#StoryLineimgPosition{
+  position: absolute;
+  width: 95%;
+  padding: 0 2.5%;
+  height: 30vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  transition: height ease 1s;
+}
+#TimePosition{
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#StoryLineTime{
+  display: inline-block;
+  background-color: #675094;
+  height: 20px;
+  margin: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000;
+}
+#StoryLineText{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px;
+}
+#StoryLineWriter{
+  margin: 5px 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFC000;
+  text-shadow: 1px 1px 1px #000;
+}
+#StoryLineTitle{
+  margin: 5px 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+}
+
+#StoryLineinfo{
+  width: 95%;
+  height: 15vh;
+  padding: 0 2.5%;
+  overflow-y: hidden;
+}
+#StoryLineinfo_notice{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#StoryLineTagPlace{
+  display: flex;
+  justify-content: flex-start;
+  width: 75%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding: 5px 0px 5px 0px;
+}
+#Tagdumileft{
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  float: left;
+  background: linear-gradient( to left, #ffffff00, #ffffffff);
+}
+#Tagdumiright{
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  margin-left: auto;
+  left: 69%;
+  float: right;
+  background: linear-gradient( to right, #ffffff00, #ffffffff);
+}
+#StoryLineTagPlace::-webkit-scrollbar {width: 0px; height: 0px;  }
+#StoryLineTagPlace::-webkit-scrollbar-track {  background: rgba(0,0,0,0); }
+#StoryLineTagPlace::-webkit-scrollbar-thumb {  border-radius: 20px; background-color: #00000070;}
+
+
+.storyLineTag{
+  height: 20px;
+  background-color: #767171;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFF;
+  box-shadow: 1px 1px 3px #333;
+  padding: 2px 10px;
+  margin: auto 5px auto 0px;
+  border-radius: 15px;
+}
+#Summary_Place{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  height: 40px;
+  font-size: 13px;
+  margin: 5px 0px 5px 0px;
+  overflow: hidden;
+}
+#like_bnt{
+  width: 50px;
+  height: 20px;
+  box-shadow: 1px 1px 3px #333;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 2px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+
+}
+#like_bnt > img {
+  /* filter : brightness(0%); */
+  padding: 2.5px 2.5px;
+  align-items: center;
+}
+
+
+/* ------------------------하단부------------------------ */
+#Story_Place{
+  width: 100%;
+  height: 55vh;
+  transition: all ease 1s;
+}
+/* --------------지도-------------- */
+#storymap {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin-top: 30vh;
+  height: 70vh;
+}
+
+/* --------------리스트-------------- */
+
+#Storylist{
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  transition: all ease 1s;
+}
+#StoryContentBackground{
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  margin: 0px;
+  background-color: #F2F2F2;
+  transition: all ease 1s;
+  opacity: 1.0;
+}
+#StoryContent{
+  position: absolute;
+  width: 100%;
+  height: 55vh;
+  margin: 0px;
+  overflow-y: auto;
+  transition: all ease 1s;
+}
+/* --------------스토리-------------- */
+.stroycard{
+  width: 95%;
+  height: 180px;
+  margin: 10px 2.5%;
+  background-color: blue;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px #00000099;
+  overflow: hidden;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFF;
+}
+
+.stroycard > img{
+  position: absolute;
+  width: 95%;
+  height: 180px;
+  object-fit: cover;
+  filter: brightness(70%);
+  border-radius: 15px;
+}
+
+.story_info{
+  position: absolute;
+  background-color: #00000030;
+  width: 95%;
+  height: 180px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.story_upper{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.story_position{
+  color: #FFC000;
+}
+.story_title{
+  font-size: 26px;
+}
+.story_mapBnt{
+  background-color: #173648;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+.story_summary{
+  margin: 10px;
+}
+
+#scrolldumi{
+  width : 100%;
+  height: : 0px;
+}
+
+#mapMenu{
+  position: absolute;
+  z-index: 750;
+  width: 100%;
+}
+
+#walkinginfo{
+  position: absolute;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin: 10px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+
+}
+
+#myposition{
+ background-color: #FE4365;
+ border: 0px;
+ color: #fff;
+ font-family: 'Noto Sans KR', sans-serif;
+ font-weight: bold;
+ font-size: 13px;
+ border-radius: 15px;
+ box-shadow: 3px 3px 5px #00000099;
+ float:right;
+ margin: 10px;
+}

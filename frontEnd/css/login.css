@@ -1,0 +1,110 @@
+#view{
+  margin: 10vh 0;
+  transition: margin 0.3s;
+}
+
+#loginform{
+  height: 50vh;
+  width: 80%;
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #888;
+}
+#info{
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 3vh;
+}
+#login{
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+#password{
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+#password > input{
+  width: 100%;
+}
+#login > input{
+  width: 100%;
+}
+
+#loginbnt{
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 30px;
+  width: 50%;
+  margin: 5vh auto;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+
+
+#background_Layer{
+  background: #FF416C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#link{
+  height: 5vh;
+  background: #fff;
+  width: 80%;
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vh auto;
+  padding: 2vh 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #888;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+#point{
+  color: #FF416C;
+}
+
+#guest{
+  height: 5vh;
+  background: #fff;
+  width: 80%;
+  margin: 10% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vh auto;
+  padding: 2vh 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #888;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}

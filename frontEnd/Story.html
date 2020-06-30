@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 전역 CSS -->
+  <link rel="stylesheet" href="css/master.css">
+  <!-- 지역 CSS -->
+  <link rel="stylesheet" href="css/story.css">
+  <!-- test CSS -->
+  <link rel="stylesheet" href="css/test.css">
+
+
+
+</head>
+
+<body>
+  <div id="background_Layer">
+  </div>
+  <div id="content_Layer">
+    <div id="StoryLineProfile">
+      <div id="profile_img">
+        <img src="img/img0.svg">
+        <div id="StoryLineimgPosition">
+
+          <div id="StoryLineText">
+            <div id="StoryLineWriter">
+              <!-- wjddlsrnr307 집필 -->
+            </div>
+            <div id="StoryLineTitle">
+              <!-- 제목을 얼마까지 늘려도 별 문제가 없을지 체크를 해봅니다. -->
+            </div>
+          </div>
+
+        </div>
+        <div id="TimePosition">
+          <!-- <div id="StoryLineTime">
+              1시간 소요
+            </div> -->
+        </div>
+      </div>
+      <div id="StoryLineinfo">
+        <div id="StoryLineinfo_notice">
+          <div id="StoryLineTagPlace">
+
+            <div id="StoryLineTagzone">
+
+            </div>
+          </div>
+          <div id="like_bnt">
+            <img src="img/heart.svg" width="15px" height="15px">
+            <!-- 좋아요수 -->
+            <div id="likeval">
+              <!-- 160 -->
+            </div>
+          </div>
+        </div>
+        <div id="Summary_Place">
+          <!-- 서머리 -->
+        </div>
+      </div>
+    </div>
+
+    <div id="storymap">
+      <div id="mapMenu">
+        <div id="walkinginfo">
+          <span id="walkingTime"></span>
+          <span id="walkingDistance"></span>
+        </div>
+        <button id="myposition" onClick="moveMyLocation()">📌현위치로</button>
+      </div>
+
+      <div id="map_div">
+      </div>
+
+    </div>
+    <div id="Story_Place">
+      <div id="StoryContentBackground">
+
+      </div>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/Storyloading.js"></script>
+      <!-- T-map -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <script src="https://api2.sktelecom.com/tmap/js?version=1&format=javascript&appKey=894c5ae4-5aac-41c6-97fa-6c912ad9d00b"></script>
+
+      <!-- <script src="main.js"></script> -->
+      <script src="js/Story.js"></script>
+
+
+      <div id="StoryContent">
+        <!-- 스토리 추가 되는 곳 -->
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="black_Layer">
+
+  </div>
+  <div id="story_Layer">
+    <div id="story">
+      <div id="storybackground">
+
+      </div>
+      <div id="Storyboard">
+        <!-- <div id="StoryTitle">
+          안녕하세요
+        </div> -->
+        <!-- <div class="Story Story_imgType">
+          <img src="http://uidesignguides.com/wp-content/uploads/2018/11/image.png" alt="">
+        </div>
+        <div class="Story Story_textType">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+         -->
+      </div>
+    </div>
+  </div>
+  <div id="modal_Layer">
+
+  </div>
+</body>
+
+</html>

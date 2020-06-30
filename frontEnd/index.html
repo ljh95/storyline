@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 전역 CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- 지역 CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- test CSS -->
+    <link rel="stylesheet" href="css/test.css">
+
+
+    <title></title>
+
+
+
+  </head>
+  <body>
+    <div id="background_Layer">
+    </div>
+    <div id="content_Layer">
+      <div id="header_place">
+        <div id="main_menu">
+         <img src="img/menu.svg" width="40px">
+        </div>
+        <div id="name_sub_place">
+          <!-- 이곳에 이름이 저장됩니다  -->
+          스토리라인
+        </div>
+        <div id="search">
+         <img src="img/search.svg" width="40px">
+        </div>
+      </div>
+      <div id="dumi_header_place">
+        <!-- 고정된 상단바를 가리기 위함 -->
+      </div>
+        <div id="main_content">
+          <div id="name_place">
+            <div id="name">
+                스토리라인
+            </div>
+            <div id="search_chagne_btn">
+              <!-- <input id="search_chagne_loc" type="button" name="loc" value="주변위치" onclick="console.log(this.value)"> -->
+              <input id="search_chagne_like" type="button" name="loc" value="최다추천" onclick="console.log(this.value)">
+            </div>
+          </div>
+          <div id="storyLine_place">
+            <!-- 스토리라인 -->
+            <!-- <div class="storyLine" onclick="location.href='Story.html';">
+              <div class="storyLineImg">
+                <img src="img/test1.jpg">
+                <div class="storyLineImgPosition">
+                  <div class="storyLineImgPositionTop">
+                    <div class="storyLineTime">
+                      3시간 소요
+                    </div>
+                  </div>
+                  <div class="storyLineImgPositionBottom">
+                    <div class="storyLineLocation">
+                      여기서 5.2KM
+                    </div>
+                    <div class="storyLineTitle">
+                      2016 촛불 집회 현장을 따라
+                    </div>
+
+                    </div>
+
+                </div>
+              </div>
+              <div class="storyLineText">
+                <div class="storyLineTextPosition">
+                  <div class="storyLineTagPlace">
+                    <span class="storyLineTag">#역사</span>
+                    <span class="storyLineTag">#사회</span>
+                    <span class="storyLineTag">#광화문</span>
+                  </div>
+                  <div class="summary_place">
+                    2016년 한국을 뒤흔든 촛불집회의 역사를 따라서 비선실세 보도부터 탄핵 판결까지 따라가본다.
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- 스토리라인 -->
+
+        </div>
+      </div>
+      <div id="writebnt">
+
+      </div>
+    </div>
+
+    <div id="black_Layer">
+
+    </div>
+    <div id="side_Layer">
+      <div id="profileBox">
+        <div id="userProfile">
+
+        </div>
+        <div id="username">
+          username123
+        </div>
+      </div>
+      <div id="LoginBox" onclick="location.href = 'login.html';">
+        <div id="userProfile">
+
+        </div>
+        <div id="username">
+          로그인하기
+        </div>
+      </div>
+      <div id="menuBox">
+        <div id="linkmenu">
+          <div id="menu_StoryLine" class="menu_center">
+            <img src="img/menu_story3.png" height="40px" width="40px"> <span>스토리 라인</span>
+          </div>
+          <!-- <div id="menu_VisitStory" class="menu_center">
+            <img src="img/menu_story1.png" height="40px" width="40px"> <span>다녀간 스토리</span>
+          </div> -->
+          <div id="menu_WrittenStory" class="menu_center">
+            <img src="img/menu_story4.png" height="40px" width="40px"> <span>스토리 수정하기</span>
+          </div>
+          <div id="menu_NewStory" class="menu_center">
+            <img src="img/menu_story2.png" height="40px" width="40px"> <span>스토리 작성하기</span>
+          </div>
+          <!-- <div id="menu_test" class="menu_center">
+            <img src="img/menu_story2.png" height="40px" width="40px"> <a href="https://a4363673.ngrok.io/index">테스트</a>
+          </div> -->
+        </div>
+        <div id="setmenu">
+          <div id="menu_mypage" onclick="location.href='login.html';">
+            로그아웃
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal_Layer">
+      <div id="modal_Background">
+
+      </div>
+
+      <div id="serach" class="modal">
+        <div id="serachTitle" class="modalTitle">
+          검색
+        </div>
+        <div id="serachform">
+          <input id="serach_input" type="text" name="" value="">
+          <input id="serach_bnt"  type="button" name="" value="검색" onClick="serachstart();">
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/JqueryPlugin/jquery.ajax-cross-origin.min.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
