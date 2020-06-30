@@ -70,6 +70,6 @@ letsee opensouce를 활용하여 좀 더 활동적인 이미지를 연출합니�
 
 
 # Fin
-<img src="/readmeImageFile/intro.png">    
-<img src="/readmeImageFile/intro2.png">    
-<img src="/readmeImageFile/intro3.png">    
+<img src="/readmeImageFile/meeting.png">    
+<img src="/readmeImageFile/meeting2.png">    
+<img src="/readmeImageFile/meeting3.png">    
