@@ -2,9 +2,8 @@
 * StoryLine 소개   
 * 기술소개   
 * 소개 영상
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3PPtpr84P5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-[StoryLine](https://drive.google.com/file/d/1-HcdsgJn_ep6v_gKMsxLIdRnlKCgqBAz/view?usp=sharing, "소개 link")
-   
+[StoryLine](https://img.youtube.com/vi/3PPtpr84P5k/maxresdefault.jpg)](https://youtu.be/3PPtpr84P5k)
+
 # StoryLine 소개   
 <img src="/readmeImageFile/intro3.png">    
 <img src="/readmeImageFile/intro.png">    
