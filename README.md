@@ -2,7 +2,7 @@
 * StoryLine 소개   
 * 기술소개   
 * 소개 영상
-[StoryLine](https://img.youtube.com/vi/3PPtpr84P5k/maxresdefault.jpg)](https://youtu.be/3PPtpr84P5k)
+[![Watch the video](https://img.youtube.com/vi/3PPtpr84P5k/maxresdefault.jpg)](https://youtu.be/3PPtpr84P5k)
 
 # StoryLine 소개   
 <img src="/readmeImageFile/intro3.png">    
