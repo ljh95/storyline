@@ -24,7 +24,7 @@
     "mysql": "^2.17.1",
     "node-iframe-replacement": "^1.0.0",
     "path": "^0.12.7",
-    "sharp": "^0.23.1",
+    "sharp": "^0.30.5",
     "url": "^0.11.0"
   },
   "devDependencies": {}
